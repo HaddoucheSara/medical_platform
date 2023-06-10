@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctori</title>
+   <!--  <link href="./assets/css/style.css" rel="stylesheet" >-->
+    <style>
+     :root{
+  --blue:#3c6382;
+  --dark-blue:#0a3d62;
+}
+
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border:none;
+  text-transform: capitalize;
+
+
+}
+
+*::selection{
+  background:var(--dark-blue);
+  color:#fff;
+}
+
+
+
+section{
+  min-height: 100vh;
+  padding:1rem 9%;
+  padding-top: 8rem;
+}
+
+
+.heading{
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+header{
+background-color: white;
+
+  position: fixed;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0; left:0;
+  z-index: 1000;
+  padding:1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .titre{
+  font-size: 2.5rem;
+  color:var(--dark-blue) ;
+  align-self: auto;
+  text-decoration: none;
+}
+
+header .logo span{
+  color:var(--blue);
+}
+
+header .navbar a{
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin-left: .1rem;
+  padding:.5rem 2rem;
+  border-radius: .5rem;
+  color:var(--dark-blue);
+}
+.logo{
+  margin-left:-150px;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+  background: var(--blue);
+  color:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header.sticky{
+ 
+  background:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+#menu{
+  font-size: 3rem;
+  color:var(--blue);
+  cursor: pointer;
+  display: none;
+}
+
+h1{
+  text-align: center;
+  color:#7eaccd;
+  
+ 
+}
+
+
+body{
+  background: linear-gradient(to bottom, #CDEFFF ,  #ffff);
+  background-repeat: no-repeat;
+
+}
+
+input[type="text"], input[type="email"], input[type="tel"],input[type="time"], input[type="date"] {
+   
+   width: 30%;
+  }
+   html{
+    font-size: 60.5%;
+   overflow: scroll;
+
+  }
+  input {
+    padding: 1.05rem;
+    margin-bottom: 2.05rem;
+    border-radius: 0.52rem;
+    border: none;
+    box-shadow: 0rem 0rem 0.56rem #ccc;
+   /*display: flex;
+   text-align: left;*/
+    
+  }
+  .apres_header{
+    margin-top: 14.5rem;
+    
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.525rem;
+    color: #0a3d62;
+    display:block;
+    min-width:5rem;
+    margin-left:-35%;
+   
+ 
+  }
+  #myForm {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+   }
+   .H1{
+    margin-bottom:2%;
+   
+   }
+   button {
+    padding: 1rem 2em;
+    background-color: #0a3d62;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top:1%;
+    margin-bottom:3%;
+  
+  }
+  @media (max-width: 1100px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    height:120px;
+  }
+  .logo{
+    margin-left:0.1rem;
+    margin-top:-1.8rem;
+    height:50px;
+    width:50px;
+    margin-bottom:1rem;
+  }
+  .navbar{
+    margin-top:-3rem;
+    font-size:1.2rem;
+  }
+  .titre{
+    font-size:1.6rem;
+  }
+}
+
+ 
+
+
+    </style>
+</head>
+<body>
+<header>
+    <a href="#" class="titre">Cabinet Dr Baalhouss Hicham  </a>
+    <img src="./Assets/Images/LOGO_medecin.png" class="logo" width="70px" height="70px"/>
+    <div id="menu" class="fas fa-bars"> </div>
+    <nav class="navbar">
+      <a href="./EspacePatient.php">Revenir a mon Espace </a>
+  </nav>
+  </header>
+ <div class="apres_header">
+  <div class="H1">
+   <h1>Veuillez choisir la date du rendez-vous</h1>
+  </div>
+  <form id="myForm"  method="POST" action="RendezVous.php">
+         
+    <label for="nom" class="LABEL">Nom :</label>
+    <input type="text" id="nom" name="nom" class="form_nom" required><br><br>
+    
+    <label for="prenom" class="LABEL">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" class="form_prenom" required><br><br>
+    
+    <label for="email" class="LABEL">Email :</label>
+    <input type="email" id="email" name="email" class="form_email" required><br><br>
+    
+    <label for="telephone" class="LABEL">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" class="form_phone" pattern="[0-9]{10}"  required><br><br>
+ 
+<!--<div class="TIME-DATE">-->
+   
+<!--<div class="DATE">-->
+    <label for="start" class="special LABEL-DATE">Date:</label>
+    <input type="date" id="start" name="trip-start"  class="form_date" >
+<!--</div>-->
+ <!-- <div>-->
+    <label for="appt" class="special LABEL-TIME">Heure:</label>
+    <input type="time" id="appt" name="appt"   step="1800" min="08:30" max="18:00" class="form_heure" required>
+  <!--</div>
+  </div>-->
+    <button type="submit" name="valider">Sauvegarder</button>
+  </form>
+</div>
+<script>
+// Obtenir le champ d'entrée de date
+var inputDate = document.getElementById("start");
+
+// Définir la valeur minimale de l'attribut "min" à partir de la date actuelle
+inputDate.setAttribute("min", new Date().toISOString().split('T')[0]);
+
+// Désactiver les samedis et dimanches
+inputDate.addEventListener("input", function() {
+  var selectedDate = new Date(inputDate.value);
+  if (selectedDate.getDay() == 0 || selectedDate.getDay() == 6) {
+    inputDate.setCustomValidity("Sélectionnez une date autre que le samedi ou le dimanche");
+  } else {
+    inputDate.setCustomValidity("");
+  }
+});
+</script>
+</body>
+</html>

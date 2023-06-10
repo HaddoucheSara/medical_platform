@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "./CSS/css_DossierMedical_responsive.css"/>  
+    <title>Document</title>
+    <style>
+        
+        header .titre {
+            font-size: 1.5rem !important;
+        }
+        header .navbar a{ 
+            font-size: 1.3rem;
+        }
+
+        .card{
+            margin-top: 12%;
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header style =" background-color:white; height:18%;">
+        <a href="#" class="titre">Cabinet Dr Baalhouss Hicham                </a>
+        <img src="./Assets/Images/LOGO_medecin.png" class="logo" width="70px" height="70px"/>
+        <div id="menu" class="fas fa-bars">
+            
+        </div>
+        <nav class="navbar">
+            <a href="./EspacePatient.php">Revenir a mon espace</a>
+        </nav>
+      </header>
+    <div class="card"> 
+        <!--titre du formulaire-->
+        <div class="logo">Dossier medical</div>
+        <br>
+        <br>
+        <!--formulaire et connexion avec fichier php-->
+    <form name="card-content"action="./PHPDossierMedical.php" method="post" id="myForm">
+            <label for="nom">Nom :
+              <input type="text" name="nom"  placeholder="Votre nom" required/>
+            </label>
+            <br>
+            <label for="user">Prenom:
+                <input type="text" name="user" placeholder="Votre prenom"  required/>
+            </label>
+            <br>
+            <label for="date">Date de naissance:
+                <input type="date" name="date" placeholder="Votre date de naissance" required style="height:20px;"/>
+            </label>  
+            <br>
+            <label for="poids">Poids:
+                <input type="int" name="poids" placeholder="votre Poids"required />
+            </label>
+            <br>
+            <label for="taille">Taille:
+                <input type="int" name="taille" placeholder="Votre taille"required />
+            </label>
+            <br>
+            <label for="tel">numero de telephone:
+                <input type="tel" name="tel" pattern="[0-9]{10}" required="" placeholder="Votre numero  de telephone:" required/>
+            </label>
+            <br>
+            <label for="adres">Adresse:
+                <input type="text" name="adres" placeholder="Votre adresse" />
+            </label>
+            <br>
+            <label for="maladie">Maladies: </label>
+        <select name="maladie"required>
+            <option value="" disabled selected>Vos Maladies</option>
+            <option value="Diabete">Diabete</option>
+            <option value="Asthme">Asthme</option>
+            <option value="maladies cardiaques">maladies cardiaques</option>
+            <option value="Maladies infectieuses (VIH, hepatite, tuberculose)">Maladies infectieuses (VIH, hepatite, tuberculose)</option>
+            <option value="autre">autre</option>
+        </select>
+        <br>
+        <label for="allergie">Allergies:
+        </label>
+        <select  name="allergies"required>
+            <option value=""disabled selected>Vos Allergies</option>
+            <option value="Allergies alimentaires">Allergies alimentaires</option>
+            <option value="Allergies aux piqures ">Allergies aux piqures </option>
+            <option value="Allergies saisonnieres">Allergies saisonnieres</option>
+            <option value="Allergies aux animaux">Allergies aux animaux</option>
+            <option value="autre">autre</option>
+        </select>
+        <br>
+        <label for="vaccin">Vaccin:
+          </label>
+          <select name="vaccin"required>
+            <option value=""disabled selected>Vos Vaccin</option>
+            <option value="Vaccins a virus vivants attenue" >Vaccins a virus vivants attenues</option>
+            <option value="Vaccins a virus inactives">Vaccins a virus inactives</option>
+            <option value="Vaccins a sous-unites">Vaccins a sous-unites</option>
+            <option value="Vaccins conjugues">Vaccins conjugues</option>
+            <option value="Vaccins a ARN messager">Vaccins a ARN messager</option>  
+            <option value="autre">autre</option>
+        </select>  
+        <br>
+        <button class="button-57" role="button"><span class="text">enregistrer</span><span>record</span></button>
+     
+    </form>
+
+</div>
+
+</body>
+</html>

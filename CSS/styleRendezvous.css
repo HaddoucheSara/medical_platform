@@ -1,0 +1,167 @@
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+  }
+  
+  *{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; 
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+  
+  
+  }
+  
+  *::selection{
+    background:var(--dark-blue);
+    color:#fff;
+  }
+  
+  html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+  }
+  
+  section{
+    min-height: 100vh;
+    padding:1rem 9%;
+    padding-top: 8rem;
+  }
+  
+  
+  .heading{
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+ header{
+ background-color: white;
+
+    position: fixed;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    /* padding:1.4rem; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+  
+  header .titre{
+    font-size: 2.5rem;
+    color:var(--dark-blue) ;
+    align-self: auto;
+    text-decoration: none;
+  }
+  
+  header .logo span{
+    color:var(--blue);
+  }
+  
+  header .navbar a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-left: .1rem;
+    padding:.5rem 2rem;
+    border-radius: .5rem;
+    color:var(--dark-blue);
+  }
+  
+  header .navbar a.active,
+  header .navbar a:hover{
+    background: var(--blue);
+    color:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  header.sticky{
+   
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  #menu{
+    font-size: 3rem;
+    color:var(--blue);
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  
+  h1{
+    text-align: center;
+    color:#7eaccd;
+   
+  }
+  form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0a3d62;
+ 
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #ccc;
+    
+  }
+  input[type="text"], input[type="email"], input[type="tel"] {
+    width: 60%;
+  }
+  input[type="time"], input[type="date"] {
+    width:370px;
+  }
+  .special {
+    display: block;
+    
+  }
+  .TIME-DATE{
+    display: flex;
+    
+  }
+  .DATE{
+    margin-right: 30px;
+  }
+  .LABEL{
+    margin-left: -690px;
+  }
+  .LABEL-DATE{
+    margin-left: 9px;
+  }
+  .LABEL-TIME{
+    margin-left:9px;
+  }
+  .LABEL-TEL{
+    margin-left:-677px
+  }
+  
+
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0a3d62;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  
