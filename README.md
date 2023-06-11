@@ -1,7 +1,7 @@
 # medical_platform
 # Partie 1:
      -->Espace_Medcin(Voir Video):
-https://github.com/HaddoucheSara/medical_platform/assets/124178343/a8cf9bcc-9c72-49e4-8d0d-f1e1a182b2c3
+https://github.com/HaddoucheSara/medical_platform/assets/124178343/4cd21820-99ee-4e6d-b331-64a2b245df60
 
 # Partie 2:
       -->Espace_Patient(voir Video):
