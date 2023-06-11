@@ -15,5 +15,5 @@ https://github.com/HaddoucheSara/medical_platform/assets/124178343/7965ce3b-0b02
        --> Tafellahte Salma
        --> Hmamou Soukaina
        --> Haddouche Sara
-# remarque:
+# Remarque:
    --> Il faut modifier la configuration de votre base de donnes dans tous les fichiers du projet.
