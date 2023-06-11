@@ -8,7 +8,7 @@ https://github.com/HaddoucheSara/medical_platform/assets/124178343/8d878ec5-4896
 https://github.com/HaddoucheSara/medical_platform/assets/124178343/7965ce3b-0b02-49b2-be60-8bdbebd6a8fd
 
 # Rapport:
-
+https://docs.google.com/presentation/d/1j5nJMne6APy5ig_OeMvZF51Nv-UY30Fu/edit?usp=sharing&ouid=102888280499655711514&rtpof=true&sd=true
 
 # Réalisé par:
        --> Malki Nawal
