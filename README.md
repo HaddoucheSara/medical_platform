@@ -1,5 +1,6 @@
 # medical_platform
-# Vidéo de présentation du projet:
+# Vidéo presentatif du projet:
+  
 https://drive.google.com/file/d/17_uWgFEduYAZ1kGH2zR8Crefm7tOO--y/view?usp=sharing
 
 # Rapport:
